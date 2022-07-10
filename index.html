@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="style.css" rel="stylesheet">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+
+<body>
+
+  <header>
+    <ul id="game_name">
+      <li>ROCK</li>
+      <li>PAPER</li>
+      <li>SCISSORS</li>
+      <li class="game_name_hidden">LIZARD</li>
+      <li class="game_name_hidden">SPOCK</li>
+    </ul>
+    <p class="score_contain">
+      SCORE <br>
+      <span id="score"></span>
+    </p>
+  </header>
+  <main class="game">
+
+    <!-- CONTENU JEU TRIANGLE -->
+
+    <div id="contain_game_triangle">
+      <img src="./images/bg-triangle.svg" alt="Trinity force representation" class="triangle">
+      <div class="box_shadow_bottom paper possibility">
+        <button class="element_game"><img src="./images/icon-paper.svg" alt="Paper icon" class="icon_item"></button>
+      </div>
+      <div class="box_shadow_bottom scissors possibility">
+        <button class="element_game"><img src="./images/icon-scissors.svg" alt="Scissors icon" class="icon_item">
+        </button>
+      </div>
+      <div class="box_shadow_bottom rock possibility">
+        <button class="element_game"><img src="./images/icon-rock.svg" alt="rock icon" class="icon_item"> </button>
+      </div>
+    </div>
+
+
+    <!-- CONTENU JEU PENTAGON -->
+
+    <div id="contain_game_pentagon">
+      <img src="./images/bg-pentagon.svg" alt="Pentagon force representation" class="pentagon">
+      <div class="box_shadow_bottom paper possibility">
+        <button class="element_game element_game_pentagon"><img src="./images/icon-paper.svg" alt="Paper icon"
+            class="icon_item"></button>
+      </div>
+      <div class="box_shadow_bottom scissors possibility">
+        <button class="element_game element_game_pentagon"><img src="./images/icon-scissors.svg" alt="Scissors icon"
+            class="icon_item">
+        </button>
+      </div>
+      <div class="box_shadow_bottom rock possibility">
+        <button class="element_game element_game_pentagon"><img src="./images/icon-rock.svg" alt="rock icon"
+            class="icon_item"> </button>
+      </div>
+      <div class="box_shadow_bottom lizard possibility">
+        <button class="element_game element_game_pentagon"><img src="./images/icon-lizard.svg" alt="lizard icon"
+            class="icon_item"> </button>
+      </div>
+      <div class="box_shadow_bottom spock possibility">
+        <button class="element_game element_game_pentagon"><img src="./images/icon-spock.svg" alt="spock icon"
+            class="icon_item"> </button>
+      </div>
+    </div>
+
+    <!-- CONTENU RESULTAT -->
+
+    <div id="game_result">
+      <div class="choice">
+        <p>YOU PICKED</p>
+        <!-- <div class="animation_contain"> -->
+        <button class="element_game element_game_result"><img id="playerChoice" class="icon_item" alt="User choice">
+        <!-- </div> -->
+    </button> 
+      </div> 
+      <div id="result">
+        <p id="text_result">YOU WIN</p>
+        <button class="reload" id="reload_normal">Play again</button>
+      </div>
+      <div class="choice">
+        <p>THE HOUSE PICKED</p>
+        <!-- <div class="animation_contain"> -->
+        <div id="circle_animation"></div>
+        <div class="element_game  element_game_result element_game_no_img"></div>
+        <button class="element_game  element_game_result"><img id="houseChoice" class="icon_item" alt="House choice"></button>
+      <!-- </div> -->
+      </div>
+    </div>
+    <div id="rules">
+      <h1>RULES</h1>
+      <img id="rules_img" alt="Règle du jeu">
+      <img src="./images/icon-close.svg" class="close" alt="croix de fermeture">
+    </div>
+  </main>
+
+
+  <div class="btn_interraction">
+    <button id="change_game" class="button_bottom">CHANGE RULES</button>
+    <button id="reset_score" class="button_bottom">RESET</button>
+    <button id="rules_link" class="button_bottom">RULES</button>
+  </div>
+
+  <script src="script.js"></script>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Kevin KERKAR</a>.
+    </fotter>
+</body>
+
+</html>
